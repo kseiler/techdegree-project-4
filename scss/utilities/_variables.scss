@@ -1,16 +1,45 @@
+// ---------------------------------------------------------------
+//  Variables
+// ---------------------------------------------------------------
+
 
 /* Color  ----------------------------- */
+$color-primary: #58e1c1;
+$color-secondary: #51ddfc;
 
-$brand-primary: #58e1c1;
-$brand-secondary: #51ddfc;
-$text-primary: #777;
+$color-text-primary: #777;
 
+$red:       #e4757a;
+$green:     #63cc82;
+$blue:      #927bc1;
+$yellow:    #fd7856;
+
+
+/* Font Stacks  ----------------------- */
+$font-stack-primary: 'Lato', sans-serif;
+
+
+/* Layout  ---------------------------- */
+$max-width: 1400px;
+
+
+// ---------------------------------------------------------------
+//  Maps
+// ---------------------------------------------------------------
 
 /* Breakpoints  ----------------------- */
-
 $breakpoints: (
     "small":        400px,
     "medium":       768px,
     "large":        1024px,
     "extra-large":  1440px
 );
+
+/* Button Styles  --------------------- */
+$styles: (
+    "default":  $color-secondary,
+    "error":    $red,
+    "info":     $blue,
+    "warning":  $yellow,
+    "success":  $green
+)

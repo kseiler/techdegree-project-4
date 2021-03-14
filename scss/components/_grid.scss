@@ -5,10 +5,9 @@
 .container {
   padding: 0 10px;
   @include mq('medium') {
-    max-width: 1400px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    @include center {
+      max-width: $max-width;
+    }
   }
 }
 
@@ -96,11 +95,7 @@
 
 
 @media (min-width: 768px) {
-  .centered {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  } 
+
   /* This is a mixin in */
 
   .col-1 {
