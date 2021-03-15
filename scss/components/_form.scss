@@ -9,10 +9,10 @@
 .input{
   display: block;
   width: 94%;
-  margin: 10px auto 0;
+  margin: $x2 auto 0;
   border: none;
-  padding: 10px;
-  border-bottom: 5px solid $color-primary;
+  padding: $x2;
+  border-bottom: $base solid $color-primary;
 }
 
 .hidden {

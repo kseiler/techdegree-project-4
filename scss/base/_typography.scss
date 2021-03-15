@@ -4,7 +4,7 @@
 
 .headline-primary {
   color: $color-primary;
-  margin-left: 10px;
+  margin-left: $x2;
 }
 
 .headline-secondary {
@@ -21,8 +21,8 @@
   font-size: 1.5em;
   font-weight: 300;
   font-style: italic;
-  margin-left: 20px;
-  padding-left: 20px;
+  margin-left: $x4;
+  padding-left: $x4;
   border-left: 8px solid $color-primary;
-  border-radius: 5px;
+  border-radius: $base;
 }

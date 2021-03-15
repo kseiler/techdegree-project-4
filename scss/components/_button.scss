@@ -2,18 +2,18 @@
 /*              Buttons                          */
 /* ============================================= */
 .btn {
-  margin-top: 15px;
+  margin-top: $x3;
   width: 100%;
   color: #fff;
   border: none;
-  padding: 10px 0;
+  padding: $x2 0;
   text-transform: uppercase;
-  border-radius: 5px;
+  border-radius: $base;
   @include bg-ease;
   @include mq('medium') {
-    padding: 10px 30px;
+    padding: $x2 $x6;
     & + & {
-      margin-left: 10px;
+      margin-left: $x2;
     }
   }
 }

@@ -3,36 +3,34 @@
 /* ============================================= */
 
 .container {
-  padding: 0 10px;
+  padding: 0 $x2;
   @include mq('medium') {
-    @include center {
-      max-width: $max-width;
-    }
+    @include center(1440px);
   }
 }
 
 .row {
-  display: flex;
-  flex-direction: column;
-  padding: 1em 10px;
-  @include mq('medium') {
-    flex-direction: row;    
+  @include flex-container($dir: column){
+    padding: 1em $x2;
+    @include mq('medium') {
+      @include flex-container($dir: row); 
+    }
   }
 }
 
 [class^=col] {
-  margin-top: 10px;
+  margin-top: $x2;
   flex-basis: 100%;
-  min-height: 25px;
-  padding: 10px;
-  border-radius: 5px;
+  min-height: $x5;
+  padding: $x2;
+  border-radius: $base;
   @include mq('medium') {
-    display: flex;
-    justify-content: center;
-    margin-top: 0;
-    align-items: center;
-    & + & {
-      margin-left: 10px;
+    @include flex-container($just: center) {
+      margin-top: 0;
+      align-items: center;
+      & + & {
+        margin-left: $x2;
+      }
     }
   }
 }
