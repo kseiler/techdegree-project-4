@@ -21,7 +21,7 @@
     }
   }
   @include mq('medium') {
-    @include flex-container($dir: row, $just: flex-end);
+    @include flex-container($disp: null, $dir: row, $just: flex-end);
     align-items: center;
     &-link {
       flex-basis: 100px;

@@ -13,7 +13,7 @@
   @include flex-container($dir: column){
     padding: 1em $x2;
     @include mq('medium') {
-      @include flex-container($dir: row); 
+      @include flex-container($disp: null, $dir: row); 
     }
   }
 }
@@ -45,10 +45,6 @@
 
 .card {
   flex-basis: 100%;
-}
-
-.centered {
-  @include center;
 }
 
 @include mq('medium') {

@@ -1,21 +1,30 @@
 /* ============================================= */
 /*              Images                           */
 /* ============================================= */
+
 .img {
-  @include center(100%);
   &-avatar {
     margin-top: $x2;
     max-height: 100%;
+    @include center(100%);
   }
   &-frame {
     margin-top: $x2;
     padding: 13px;
     border: 1px solid $color-shade;
+    @include center(100%);
   }
   &-logo {
+    @include center(null);
     @include mq('medium'){
       margin-left: initial;
       margin-right: initial;
     }
+  }
+}
+
+@include mq('medium') {
+  .centered {
+    @include center(null);
   }
 }
